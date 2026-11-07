@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gala Panuga Aziz, S.IP., M.Sosio. | Creative Portfolio</title>
+    <meta name="description" content="Portfolio of Gala Panuga Aziz: business operations, content creation, visual storytelling, and community projects.">
+    <meta name="theme-color" content="#0b0f19">
+    <title>Gala Panuga Aziz | Operations & Administration</title>
     <!-- Google Fonts: Outfit & DM Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +40,8 @@
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
+        :focus-visible { outline: 2px solid #22c55e; outline-offset: 3px; }
+        @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
     </style>
 </head>
 <body class="bg-darkBg text-zinc-100 antialiased selection:bg-green-500 selection:text-black bg-[radial-gradient(circle_at_10%_20%,rgba(249,115,22,0.1)_0%,transparent_40%),radial-gradient(circle_at_90%_80%,rgba(34,197,94,0.1)_0%,transparent_40%)] bg-fixed">
@@ -49,17 +53,17 @@
                 <span class="w-3 h-3 rounded-full bg-primary animate-pulse shadow-[0_0_10px_#22c55e]"></span>
                 Gala Panuga Aziz
             </a>
-            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-300">
+            <nav id="main-nav" class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-300">
+                <a href="#ventures" class="hover:text-primary transition-colors" data-en="Operations" data-id="Operasional">Operations</a>
                 <a href="#about" class="hover:text-primary transition-colors" data-en="About" data-id="Tentang">About</a>
-                <a href="#credentials" class="hover:text-primary transition-colors" data-en="CV & Certifications" data-id="CV & Sertifikasi">CV</a>
-                <a href="#ventures" class="hover:text-primary transition-colors" data-en="Ventures" data-id="Usaha">Ventures</a>
-                <a href="#reels" class="hover:text-primary transition-colors" data-en="Video Reels" data-id="Video Reels">Video Reels</a>
-                <a href="#creative" class="hover:text-primary transition-colors" data-en="Raierancu Gallery" data-id="Galeri Raierancu">Raierancu Gallery</a>
-                <a href="#game" class="hover:text-primary transition-colors" data-en="Mini Game" data-id="Game Mini">Mini Game</a>
-                <a href="#collaborate" class="hover:text-primary transition-colors" data-en="Collaborate" data-id="Kolaborasi">Collaborate</a>
+                <a href="#credentials" class="hover:text-primary transition-colors" data-en="CV & Education" data-id="CV & Pendidikan">CV & Education</a>
+                <a href="#reels" class="hover:text-primary transition-colors" data-en="Content" data-id="Konten">Content</a>
+                <a href="#creative" class="hover:text-primary transition-colors" data-en="Design" data-id="Desain">Design</a>
+                <a href="#collaborate" class="hover:text-primary transition-colors" data-en="Strengths" data-id="Keahlian">Strengths</a>
                 <a href="#contact" class="hover:text-primary transition-colors" data-en="Contact" data-id="Kontak">Contact</a>
             </nav>
             <div class="flex items-center gap-3">
+                <button type="button" onclick="toggleMenu()" aria-expanded="false" aria-controls="main-nav" id="menu-btn" class="md:hidden px-3 py-2 rounded-lg glass text-white" aria-label="Open navigation menu" data-menu-open-en="Open navigation menu" data-menu-open-id="Buka menu navigasi" data-menu-close-en="Close navigation menu" data-menu-close-id="Tutup menu navigasi"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
                 <button onclick="toggleLanguage()" id="lang-btn" class="px-3 py-1.5 rounded-lg glass text-xs font-mono font-bold text-primary hover:border-primary transition-colors">
                     ID / EN
                 </button>
@@ -71,20 +75,20 @@
     <section class="max-w-6xl mx-auto px-6 py-20 md:py-32 grid md:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold tracking-wide">
-                <span data-en="Creative & Open-Minded Professional" data-id="Profesional Kreatif & Berpikir Terbuka">Creative & Open-Minded Professional</span>
+                <span data-en="OPERATIONS & ADMINISTRATION · CIREBON, INDONESIA" data-id="OPERASIONAL & ADMINISTRASI · CIREBON, INDONESIA">OPERATIONS & ADMINISTRATION · CIREBON, INDONESIA</span>
             </div>
             <h1 class="font-heading text-4xl sm:text-6xl font-bold tracking-tight leading-tight text-white">
-                <span data-en="Exploring" data-id="Mengeksplorasi">Exploring</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary" data-en="Visual Identity & Growth." data-id="Identitas Visual & Pertumbuhan.">Visual Identity & Growth.</span>
+                <span data-en="I keep business and community work" data-id="Saya membantu pekerjaan bisnis dan komunitas">I keep business and community work</span> <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary" data-en="organized and moving." data-id="tetap terorganisasi dan berjalan.">organized and moving.</span>
             </h1>
             <p class="text-lg text-zinc-300 leading-relaxed">
-                Hi, I'm <strong class="text-white">Gala Panuga Aziz, S.IP., M.Sosio.</strong> Blending social sciences with entrepreneurship, video content creation, and visual storytelling.
+                <span data-en="Hi, I’m" data-id="Halo, saya">Hi, I’m</span> <strong class="text-white">Gala Panuga Aziz, S.IP., M.Sosio.</strong> <span data-en="I bring hands-on business management and community coordination experience, supported by a background in social sciences and complementary skills in content and visual design." data-id="Saya memiliki pengalaman langsung dalam manajemen bisnis dan koordinasi komunitas, didukung latar belakang ilmu sosial serta keahlian konten dan desain visual.">I bring hands-on business management and community coordination experience, supported by a background in social sciences and complementary skills in content and visual design.</span>
             </p>
             <div class="flex flex-wrap gap-4 pt-2">
                 <a href="#credentials" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-semibold hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(34,197,94,0.3)] flex items-center gap-2">
                     <i class="fa-solid fa-file-arrow-down"></i> <span data-en="Download CV" data-id="Unduh CV">Download CV</span>
                 </a>
-                <a href="#reels" class="px-6 py-3.5 rounded-xl glass text-white font-medium hover:border-primary transition-colors flex items-center gap-2">
-                    <i class="fa-solid fa-video text-primary"></i> <span data-en="Watch Reels & Voice Sample" data-id="Tonton Reels & Sampel Suara">Watch Reels & Voice Sample</span>
+                <a href="#contact" class="px-6 py-3.5 rounded-xl glass text-white font-medium hover:border-primary transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-primary"></i> <span data-en="Contact me" data-id="Hubungi saya">Contact me</span>
                 </a>
             </div>
         </div>
@@ -96,7 +100,7 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-darkBg/90 via-transparent to-transparent"></div>
                 <div class="absolute bottom-4 left-4 right-4 bg-darkBg/95 backdrop-blur-md p-3.5 rounded-2xl border border-zinc-800">
                     <p class="text-sm font-bold text-white">Gala Panuga Aziz, S.IP., M.Sosio.</p>
-                    <p class="text-xs text-primary font-medium font-mono" data-en="Creative Professional" data-id="Profesional Kreatif">Creative Professional</p>
+                    <p class="text-xs text-primary font-medium font-mono" data-en="Operations & Administration" data-id="Operasional & Administrasi">Operations & Administration</p>
                 </div>
             </div>
         </div>
@@ -106,8 +110,8 @@
     <section id="about" class="max-w-4xl mx-auto px-6 py-20 border-t border-zinc-800/80 text-center">
         <div class="max-w-2xl mx-auto space-y-6">
             <h2 class="text-3xl sm:text-4xl font-bold font-heading text-white" data-en="About Me" data-id="Tentang Saya">About Me</h2>
-            <p class="text-lg text-zinc-300 leading-relaxed" data-en="A creative and open-minded professional blending a strong foundation in social sciences—holding a Master of Arts in Sociology and a Bachelor of Arts in International Relations—with diverse experience in business management, administrative oversight, and regulatory systems. Passionate about exploring fresh perspectives, storytelling, and digital content creation centered around self-improvement, visual identity, and the creative journey." data-id="Seorang profesional yang kreatif dan berpikiran terbuka, memadukan fondasi yang kuat dalam ilmu sosial—memegang gelar Magister Sosiologi dan Sarjana Ilmu Politik—dengan pengalaman beragam dalam manajemen bisnis, pengawasan administratif, dan sistem regulasi. Bersemangat dalam mengeksplorasi perspektif baru, storytelling, dan pembuatan konten digital seputar pengembangan diri, identitas visual, dan perjalanan kreatif.">
-                A creative and open-minded professional blending a strong foundation in social sciences—holding a Master of Arts in Sociology and a Bachelor of Arts in International Relations—with diverse experience in business management, administrative oversight, and regulatory systems. Passionate about exploring fresh perspectives, storytelling, and digital content creation centered around self-improvement, visual identity, and the creative journey.
+            <p class="text-lg text-zinc-300 leading-relaxed" data-en="My primary experience is in business operations and administration as the owner and manager of Kedai Kopi Banggala, including day-to-day operations and community events. My sociology and international relations education informs how I approach people and organizations. Content creation, visual design, and research are complementary strengths." data-id="Pengalaman utama saya berada di bidang operasional dan administrasi bisnis sebagai pemilik dan pengelola Kedai Kopi Banggala, termasuk operasional harian dan acara komunitas. Pendidikan sosiologi dan hubungan internasional membantu membentuk cara saya memahami orang dan organisasi. Pembuatan konten, desain visual, dan riset merupakan keahlian pendukung.">
+                My primary experience is in business operations and administration as the owner and manager of Kedai Kopi Banggala, including day-to-day operations and community events. My sociology and international relations education informs how I approach people and organizations. Content creation, visual design, and research are complementary strengths.
             </p>
         </div>
     </section>
@@ -116,19 +120,19 @@
     <section id="credentials" class="max-w-6xl mx-auto px-6 py-20 border-t border-zinc-800/80">
         <div class="max-w-3xl mb-12">
             <h2 class="text-3xl sm:text-4xl font-bold font-heading text-white mb-2" data-en="CV & Official Certifications" data-id="CV & Sertifikasi Resmi">CV & Official Certifications</h2>
-            <p class="text-zinc-400" data-en="Download my professional CV or view active credentials." data-id="Unduh CV profesional saya atau lihat kredensial aktif.">Download my professional CV or view active credentials.</p>
+                <p class="text-zinc-400" data-en="Review my education and credentials, or download my CV for operations and administration experience." data-id="Lihat pendidikan dan kredensial saya, atau unduh CV untuk pengalaman operasional dan administrasi.">Review my education and credentials, or download my CV for operations and administration experience.</p>
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 items-center">
             <!-- CV Download Card -->
             <div class="p-8 rounded-3xl glass border border-primary/30 space-y-4">
                 <div class="w-12 h-12 rounded-xl bg-primary/20 text-primary flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-file-pdf"></i></div>
-                <h3 class="text-xl font-bold text-white">Gala Panuga Aziz - Official CV 2026</h3>
+                <h3 class="text-xl font-bold text-white" data-en="Gala Panuga Aziz - Official CV 2026" data-id="Gala Panuga Aziz - CV Resmi 2026">Gala Panuga Aziz - Official CV 2026</h3>
                 <p class="text-zinc-300 text-sm leading-relaxed">
-                    Includes academic credentials (Master of Sociology, Bachelor of International Relations), career history, and operational skill sets.
+                    <span data-en="Includes academic credentials (Master of Sociology, Bachelor of International Relations), career history, and operational skill sets." data-id="Mencakup kualifikasi akademik (Magister Sosiologi, Sarjana Hubungan Internasional), riwayat karier, dan keahlian operasional.">Includes academic credentials (Master of Sociology, Bachelor of International Relations), career history, and operational skill sets.</span>
                 </p>
                 <a href="assets/documents/CV GALA PANUGA AZIZ 2026.pdf" download class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-black font-semibold text-sm hover:bg-green-400 transition-colors shadow-[0_0_15px_rgba(34,197,94,0.3)]">
-                    <i class="fa-solid fa-download"></i> Download PDF Resume
+                    <i class="fa-solid fa-download"></i> <span data-en="Download PDF Resume" data-id="Unduh CV PDF">Download PDF Resume</span>
                 </a>
             </div>
 
@@ -137,13 +141,13 @@
                 <div class="w-12 h-12 rounded-xl bg-secondary/20 text-secondary flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-graduation-cap"></i></div>
                 <h3 class="text-xl font-bold text-white" data-en="Verified Credentials & Academic Profile" data-id="Kredensial & Profil Akademik">Verified Credentials & Academic Profile</h3>
                 <ul class="text-zinc-300 text-sm space-y-2">
-                    <li>🎖️ <strong>Character Building Certification</strong> — Pusdiklatpassus (Kopassus)</li>
-                    <li>🎓 <strong>Master of Arts in Sociology (M.Sosio.)</strong> — Universitas Airlangga</li>
-                    <li>🎓 <strong>Bachelor of Arts in International Relations (S.IP.)</strong> — Universitas Diponegoro</li>
+                    <li>🎖️ <strong data-en="Character Building Certification" data-id="Sertifikasi Pembentukan Karakter">Character Building Certification</strong> — Pusdiklatpassus (Kopassus) · <a class="text-primary underline" href="assets/certificates/pusdiklatpassus-certificate.pdf" target="_blank" rel="noopener noreferrer" data-en="View certificate" data-id="Lihat sertifikat">View certificate</a></li>
+                    <li>🎓 <strong data-en="Master of Arts in Sociology (M.Sosio.)" data-id="Magister Sosiologi (M.Sosio.)">Master of Arts in Sociology (M.Sosio.)</strong> — Universitas Airlangga</li>
+                    <li>🎓 <strong data-en="Bachelor of Arts in International Relations (S.IP.)" data-id="Sarjana Hubungan Internasional (S.IP.)">Bachelor of Arts in International Relations (S.IP.)</strong> — Universitas Diponegoro</li>
                 </ul>
                 <div class="pt-3">
                     <a href="https://www.academia.edu" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl glass text-secondary text-xs font-medium hover:border-secondary transition-colors">
-                        <i class="fa-solid fa-book-open"></i> View Academia.edu Research Profile
+                        <i class="fa-solid fa-book-open"></i> <span data-en="View Academia.edu Research Profile" data-id="Lihat Profil Riset Academia.edu">View Academia.edu Research Profile</span>
                     </a>
                 </div>
             </div>
@@ -164,13 +168,13 @@
                     <img src="assets/kedai-banggala/logo.png" alt="Kedai Kopi Banggala Logo" class="w-48 h-auto drop-shadow-[0_0_15px_rgba(34,197,94,0.3)]">
                 </div>
                 <div class="space-y-2 text-left">
-                    <p class="text-sm text-zinc-300"><strong class="text-white">Owner & Manager:</strong> Gala Panuga Aziz</p>
-                    <p class="text-sm text-zinc-300"><strong class="text-white">Address:</strong> Jl. Serbaguna No 47, Desa Jadimulya, Kecamatan Gunungjati, Kab. Cirebon</p>
-                    <p class="text-sm text-zinc-300"><strong class="text-white">Established:</strong> January 15, 2024</p>
+                    <p class="text-sm text-zinc-300"><strong class="text-white" data-en="Owner & Manager:" data-id="Pemilik & Pengelola:">Owner & Manager:</strong> Gala Panuga Aziz</p>
+                    <p class="text-sm text-zinc-300"><strong class="text-white" data-en="Address:" data-id="Alamat:">Address:</strong> Jl. Serbaguna No 47, Desa Jadimulya, Kecamatan Gunungjati, Kab. Cirebon</p>
+                    <p class="text-sm text-zinc-300"><strong class="text-white" data-en="Established:" data-id="Didirikan:">Established:</strong> <span data-en="January 15, 2024" data-id="15 Januari 2024">January 15, 2024</span></p>
                 </div>
                 <div class="pt-2">
                     <a href="https://www.instagram.com/kedaikopibanggala/" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl glass text-pink-400 text-sm font-medium hover:border-pink-400 transition-colors">
-                        <i class="fa-brands fa-instagram text-lg"></i> Kedai Kopi Banggala Instagram
+                        <i class="fa-brands fa-instagram text-lg"></i> <span data-en="Kedai Kopi Banggala Instagram" data-id="Instagram Kedai Kopi Banggala">Kedai Kopi Banggala Instagram</span>
                     </a>
                 </div>
             </div>
@@ -179,7 +183,7 @@
             <div class="p-8 rounded-3xl glass space-y-4">
                 <h3 class="text-xl font-bold text-white" data-en="Venture Highlights & Events" data-id="Sorotan Usaha & Acara">Venture Highlights & Events</h3>
                 <p class="text-zinc-300 text-sm leading-relaxed">
-                    Directing day-to-day operations, supply chains, and community engagement. Kedai Kopi Banggala serves as a localized interactive hub, hosting regional events and esports tournaments to build active foot traffic and community synergy.
+                    <span data-en="Directing day-to-day operations, supply chains, and community engagement. Kedai Kopi Banggala serves as a localized interactive hub, hosting regional events and esports tournaments to build active foot traffic and community synergy." data-id="Mengelola operasional harian, rantai pasok, dan keterlibatan komunitas. Kedai Kopi Banggala menjadi ruang interaksi lokal yang menyelenggarakan acara daerah dan turnamen esports untuk mendorong kunjungan serta kebersamaan komunitas.">Directing day-to-day operations, supply chains, and community engagement. Kedai Kopi Banggala serves as a localized interactive hub, hosting regional events and esports tournaments to build active foot traffic and community synergy.</span>
                 </p>
                 <div class="grid grid-cols-2 gap-4 pt-4">
                     <div class="bg-zinc-900/60 p-4 rounded-2xl border border-zinc-800">
@@ -188,7 +192,7 @@
                     </div>
                     <div class="bg-zinc-900/60 p-4 rounded-2xl border border-zinc-800">
                         <p class="text-secondary font-bold text-lg">Cirebon</p>
-                        <p class="text-xs text-zinc-400">Primary Operating Hub</p>
+                        <p class="text-xs text-zinc-400" data-en="Primary Operating Hub" data-id="Pusat Operasional Utama">Primary Operating Hub</p>
                     </div>
                 </div>
             </div>
@@ -197,51 +201,51 @@
         <!-- Kedai Kopi Banggala Event Gallery Grid (TikTok 9:16 Scale) -->
         <div class="flex items-center justify-between mb-8">
             <h3 class="text-2xl font-bold font-heading text-white" data-en="Kedai Kopi Banggala Events Gallery" data-id="Galeri Acara Kedai Kopi Banggala">Kedai Kopi Banggala Events Gallery</h3>
-            <span class="text-xs font-mono px-3 py-1 rounded-full bg-secondary/10 border border-secondary/30 text-secondary">TikTok 9:16 Format</span>
+            <span class="text-xs font-mono px-3 py-1 rounded-full bg-secondary/10 border border-secondary/30 text-secondary" data-en="TikTok 9:16 Format" data-id="Format TikTok 9:16">TikTok 9:16 Format</span>
         </div>
         
         <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             <!-- Event 1 -->
             <div class="rounded-3xl glass overflow-hidden border border-zinc-800 relative group shadow-lg">
                 <div class="relative aspect-[9/16] w-full bg-zinc-900 overflow-hidden">
-                    <img src="assets/kedai-banggala/events/event_1.png" alt="Event 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/kedai-banggala/events/event_1.png" alt="Community event hosted at Kedai Kopi Banggala" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
                     <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-[10px] font-mono uppercase tracking-wider text-primary font-bold">Featured Event</span>
-                        <p class="text-xs font-medium text-white">Event 1 Showcase</p>
+                        <span class="text-[10px] font-mono uppercase tracking-wider text-primary font-bold" data-en="Featured Event" data-id="Acara Unggulan">Featured Event</span>
+                        <p class="text-xs font-medium text-white" data-en="Event 1 Showcase" data-id="Sorotan Acara 1">Event 1 Showcase</p>
                     </div>
                 </div>
             </div>
             <!-- Event 2 -->
             <div class="rounded-3xl glass overflow-hidden border border-zinc-800 relative group shadow-lg">
                 <div class="relative aspect-[9/16] w-full bg-zinc-900 overflow-hidden">
-                    <img src="assets/kedai-banggala/events/event_2.jpeg" alt="Event 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/kedai-banggala/events/event_2.jpeg" alt="Community gathering at Kedai Kopi Banggala" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
                     <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-[10px] font-mono uppercase tracking-wider text-primary font-bold">Community</span>
-                        <p class="text-xs font-medium text-white">Event 2 Showcase</p>
+                        <span class="text-[10px] font-mono uppercase tracking-wider text-primary font-bold" data-en="Community" data-id="Komunitas">Community</span>
+                        <p class="text-xs font-medium text-white" data-en="Event 2 Showcase" data-id="Sorotan Acara 2">Event 2 Showcase</p>
                     </div>
                 </div>
             </div>
             <!-- Event 3 -->
             <div class="rounded-3xl glass overflow-hidden border border-zinc-800 relative group shadow-lg">
                 <div class="relative aspect-[9/16] w-full bg-zinc-900 overflow-hidden">
-                    <img src="assets/kedai-banggala/events/event_3.jpeg" alt="Event 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/kedai-banggala/events/event_3.jpeg" alt="Tournament event at Kedai Kopi Banggala" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
                     <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-[10px] font-mono uppercase tracking-wider text-primary font-bold">Tournament</span>
-                        <p class="text-xs font-medium text-white">Event 3 Showcase</p>
+                        <span class="text-[10px] font-mono uppercase tracking-wider text-primary font-bold" data-en="Tournament" data-id="Turnamen">Tournament</span>
+                        <p class="text-xs font-medium text-white" data-en="Event 3 Showcase" data-id="Sorotan Acara 3">Event 3 Showcase</p>
                     </div>
                 </div>
             </div>
             <!-- Event 4 -->
             <div class="rounded-3xl glass overflow-hidden border border-zinc-800 relative group shadow-lg">
                 <div class="relative aspect-[9/16] w-full bg-zinc-900 overflow-hidden">
-                    <img src="assets/kedai-banggala/events/event_4.jpeg" alt="Event 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <img src="assets/kedai-banggala/events/event_4.jpeg" alt="Local community event at Kedai Kopi Banggala" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80"></div>
                     <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-[10px] font-mono uppercase tracking-wider text-primary font-bold">Gathering</span>
-                        <p class="text-xs font-medium text-white">Event 4 Showcase</p>
+                        <span class="text-[10px] font-mono uppercase tracking-wider text-primary font-bold" data-en="Gathering" data-id="Pertemuan">Gathering</span>
+                        <p class="text-xs font-medium text-white" data-en="Event 4 Showcase" data-id="Sorotan Acara 4">Event 4 Showcase</p>
                     </div>
                 </div>
             </div>
@@ -252,7 +256,7 @@
     <section id="reels" class="max-w-6xl mx-auto px-6 py-20 border-t border-zinc-800/80">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
-                <span class="text-xs font-mono px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary mb-3 inline-block">Bilingual Voice & Delivery Preview</span>
+                <span class="text-xs font-mono px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary mb-3 inline-block" data-en="Bilingual Voice & Delivery Preview" data-id="Pratinjau Suara & Penyampaian Dwibahasa">Bilingual Voice & Delivery Preview</span>
                 <h2 class="text-3xl sm:text-4xl font-bold font-heading text-white mb-2" data-en="Content Creator & Video Reels" data-id="Kreator Konten & Video Reels">Content Creator & Video Reels</h2>
                 <p class="text-zinc-400" data-en="Self-improvement monologues and visual storytelling featuring natural voice pacing." data-id="Monolog pengembangan diri dan visual storytelling dengan nada suara natural.">Self-improvement monologues and visual storytelling featuring natural voice pacing.</p>
             </div>
@@ -270,49 +274,49 @@
             <!-- Video Reel 1 -->
             <div class="rounded-3xl glass overflow-hidden border border-zinc-800">
                 <div class="relative aspect-[9/16] w-full bg-zinc-900 flex items-center justify-center overflow-hidden">
-                    <video class="w-full h-full object-cover" controls>
+                    <video class="w-full h-full object-cover" controls preload="none" aria-label="Video sample 1: Self-Improvement">
                         <source src="assets/content-creator/videos/self-improvement-1.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="p-4 space-y-1">
-                    <span class="text-xs text-primary font-mono">Voice Sample 1</span>
-                    <h3 class="font-bold text-sm text-white">Self-Improvement</h3>
+                    <span class="text-xs text-primary font-mono" data-en="Voice Sample 1" data-id="Sampel Suara 1">Voice Sample 1</span>
+                    <h3 class="font-bold text-sm text-white" data-en="Self-Improvement" data-id="Pengembangan Diri">Self-Improvement</h3>
                 </div>
             </div>
             <!-- Video Reel 2 -->
             <div class="rounded-3xl glass overflow-hidden border border-zinc-800">
                 <div class="relative aspect-[9/16] w-full bg-zinc-900 flex items-center justify-center overflow-hidden">
-                    <video class="w-full h-full object-cover" controls>
+                    <video class="w-full h-full object-cover" controls preload="none" aria-label="Video sample 2: Mindset Monologue">
                         <source src="assets/content-creator/videos/self-improvement-2.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="p-4 space-y-1">
-                    <span class="text-xs text-primary font-mono">Voice Sample 2</span>
-                    <h3 class="font-bold text-sm text-white">Mindset Monologue</h3>
+                    <span class="text-xs text-primary font-mono" data-en="Voice Sample 2" data-id="Sampel Suara 2">Voice Sample 2</span>
+                    <h3 class="font-bold text-sm text-white" data-en="Mindset Monologue" data-id="Monolog Pola Pikir">Mindset Monologue</h3>
                 </div>
             </div>
             <!-- Video Reel 3 -->
             <div class="rounded-3xl glass overflow-hidden border border-zinc-800">
                 <div class="relative aspect-[9/16] w-full bg-zinc-900 flex items-center justify-center overflow-hidden">
-                    <video class="w-full h-full object-cover" controls>
+                    <video class="w-full h-full object-cover" controls preload="none" aria-label="Video sample 3: Creative Journey">
                         <source src="assets/content-creator/videos/self-improvement-3.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="p-4 space-y-1">
-                    <span class="text-xs text-primary font-mono">Voice Sample 3</span>
-                    <h3 class="font-bold text-sm text-white">Creative Journey</h3>
+                    <span class="text-xs text-primary font-mono" data-en="Voice Sample 3" data-id="Sampel Suara 3">Voice Sample 3</span>
+                    <h3 class="font-bold text-sm text-white" data-en="Creative Journey" data-id="Perjalanan Kreatif">Creative Journey</h3>
                 </div>
             </div>
             <!-- Video Reel 4 -->
             <div class="rounded-3xl glass overflow-hidden border border-zinc-800">
                 <div class="relative aspect-[9/16] w-full bg-zinc-900 flex items-center justify-center overflow-hidden">
-                    <video class="w-full h-full object-cover" controls>
+                    <video class="w-full h-full object-cover" controls preload="none" aria-label="Video sample 4: Discipline and Growth">
                         <source src="assets/content-creator/videos/self-improvement-4.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="p-4 space-y-1">
-                    <span class="text-xs text-primary font-mono">Voice Sample 4</span>
-                    <h3 class="font-bold text-sm text-white">Discipline & Growth</h3>
+                    <span class="text-xs text-primary font-mono" data-en="Voice Sample 4" data-id="Sampel Suara 4">Voice Sample 4</span>
+                    <h3 class="font-bold text-sm text-white" data-en="Discipline & Growth" data-id="Disiplin & Pertumbuhan">Discipline & Growth</h3>
                 </div>
             </div>
         </div>
@@ -330,15 +334,15 @@
             </div>
             
             <!-- Tab Navigation Buttons -->
-            <div class="flex flex-wrap gap-2 p-1.5 rounded-2xl glass border border-zinc-800">
-                <button onclick="switchTab('posters')" id="tab-posters" class="px-4 py-2 rounded-xl text-xs font-bold transition-all bg-primary text-black">Posters (4)</button>
-                <button onclick="switchTab('puzzles')" id="tab-puzzles" class="px-4 py-2 rounded-xl text-xs font-bold transition-all text-zinc-400 hover:text-white">Puzzles (3)</button>
-                <button onclick="switchTab('vectors')" id="tab-vectors" class="px-4 py-2 rounded-xl text-xs font-bold transition-all text-zinc-400 hover:text-white">Vectors (6)</button>
+            <div role="tablist" aria-label="Creative project categories" data-aria-en="Creative project categories" data-aria-id="Kategori proyek kreatif" class="flex flex-wrap gap-2 p-1.5 rounded-2xl glass border border-zinc-800">
+                <button type="button" role="tab" aria-selected="true" aria-controls="content-posters" onclick="switchTab('posters')" id="tab-posters" class="px-4 py-2 rounded-xl text-xs font-bold transition-all bg-primary text-black" data-en="Posters (4)" data-id="Poster (4)">Posters (4)</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="content-puzzles" onclick="switchTab('puzzles')" id="tab-puzzles" class="px-4 py-2 rounded-xl text-xs font-bold transition-all text-zinc-400 hover:text-white" data-en="Puzzles (3)" data-id="Teka-teki (3)">Puzzles (3)</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="content-vectors" onclick="switchTab('vectors')" id="tab-vectors" class="px-4 py-2 rounded-xl text-xs font-bold transition-all text-zinc-400 hover:text-white" data-en="Vectors (6)" data-id="Vektor (6)">Vectors (6)</button>
             </div>
         </div>
 
         <!-- Poster Designs Tab Content (4 Posters in JPEG) -->
-        <div id="content-posters" class="gallery-tab grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div id="content-posters" role="tabpanel" aria-labelledby="tab-posters" class="gallery-tab grid sm:grid-cols-2 md:grid-cols-4 gap-6">
             <div class="rounded-3xl glass overflow-hidden border border-zinc-800 h-64 relative group"><img src="assets/raierancu/poster-design/poster-design_1.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div>
             <div class="rounded-3xl glass overflow-hidden border border-zinc-800 h-64 relative group"><img src="assets/raierancu/poster-design/poster-design_2.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div>
             <div class="rounded-3xl glass overflow-hidden border border-zinc-800 h-64 relative group"><img src="assets/raierancu/poster-design/poster-design_3.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div>
@@ -346,14 +350,14 @@
         </div>
 
         <!-- Puzzle Concepts Tab Content -->
-        <div id="content-puzzles" class="gallery-tab hidden grid sm:grid-cols-3 gap-6">
+        <div id="content-puzzles" role="tabpanel" aria-labelledby="tab-puzzles" class="gallery-tab hidden grid sm:grid-cols-3 gap-6">
             <div class="rounded-2xl glass overflow-hidden border border-zinc-800 h-64 relative group"><img src="assets/raierancu/puzzles/puzzle_1.avif" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div>
             <div class="rounded-2xl glass overflow-hidden border border-zinc-800 h-64 relative group"><img src="assets/raierancu/puzzles/puzzle_3.avif" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div>
             <div class="rounded-2xl glass overflow-hidden border border-zinc-800 h-64 relative group"><img src="assets/raierancu/puzzles/puzzle_4.avif" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div>
         </div>
 
         <!-- Vector Artworks Tab Content (6 Vectors) -->
-        <div id="content-vectors" class="gallery-tab hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+        <div id="content-vectors" role="tabpanel" aria-labelledby="tab-vectors" class="gallery-tab hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
             <div class="rounded-xl glass overflow-hidden border border-zinc-800 h-36 relative group"><img src="assets/raierancu/vector/vector_1.avif" class="w-full h-full object-cover"></div>
             <div class="rounded-xl glass overflow-hidden border border-zinc-800 h-36 relative group"><img src="assets/raierancu/vector/vector_2.avif" class="w-full h-full object-cover"></div>
             <div class="rounded-xl glass overflow-hidden border border-zinc-800 h-36 relative group"><img src="assets/raierancu/vector/vector_3.avif" class="w-full h-full object-cover"></div>
@@ -367,23 +371,23 @@
     <section id="game" class="max-w-4xl mx-auto px-6 py-20 border-t border-zinc-800/80">
         <div class="p-8 sm:p-12 rounded-3xl glass border border-secondary/30 text-center space-y-6 bg-gradient-to-b from-secondary/5 via-transparent to-transparent">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-sm font-semibold tracking-wide">
-                <span>Interactive Break</span>
+                <span data-en="Interactive Break" data-id="Jeda Interaktif">Interactive Break</span>
             </div>
-            <h2 class="text-3xl font-bold font-heading text-white">Guess the Secret Coffee Code! ☕</h2>
+            <h2 class="text-3xl font-bold font-heading text-white" data-en="Guess the Secret Coffee Code! ☕" data-id="Tebak Kode Rahasia Kopi! ☕">Guess the Secret Coffee Code! ☕</h2>
             <p class="text-zinc-400 text-sm max-w-lg mx-auto">
-                Can you guess the secret number between <strong class="text-white">1 and 50</strong>? Test your luck and find out how many tries it takes!
+                <span data-en="Can you guess the secret number between" data-id="Bisakah kamu menebak angka rahasia antara">Can you guess the secret number between</span> <strong class="text-white">1 and 50</strong><span data-en="? Test your luck and find out how many tries it takes!" data-id="? Uji keberuntunganmu dan lihat berapa kali percobaan yang dibutuhkan!">? Test your luck and find out how many tries it takes!</span>
             </p>
             <div class="max-w-sm mx-auto space-y-4 pt-2">
-                <input type="number" id="guess-input" min="1" max="50" placeholder="Enter number (1-50)" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 text-center text-lg text-white focus:border-secondary focus:outline-none">
+                <input type="number" id="guess-input" min="1" max="50" placeholder="Enter number (1-50)" data-placeholder-en="Enter number (1-50)" data-placeholder-id="Masukkan angka (1-50)" aria-label="Enter a number from 1 to 50" data-label-en="Enter a number from 1 to 50" data-label-id="Masukkan angka dari 1 sampai 50" onkeydown="if(event.key==='Enter') checkGuess()" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 text-center text-lg text-white focus:border-secondary focus:outline-none">
                 <div class="flex gap-3">
                     <button onclick="checkGuess()" class="flex-1 py-3 rounded-xl bg-secondary text-white font-semibold text-sm hover:opacity-90 transition-opacity shadow-[0_0_15px_rgba(249,115,22,0.3)]">
-                        Make a Guess
+                        <span data-en="Make a Guess" data-id="Tebak">Make a Guess</span>
                     </button>
                     <button onclick="resetGame()" class="px-5 py-3 rounded-xl glass text-zinc-300 text-sm font-medium hover:text-white transition-colors">
-                        Reset
+                        <span data-en="Reset" data-id="Ulangi">Reset</span>
                     </button>
                 </div>
-                <p id="guess-message" class="text-sm text-zinc-400 pt-2 font-mono">Game active! Pick a number to begin.</p>
+                <p id="guess-message" aria-live="polite" class="text-sm text-zinc-400 pt-2 font-mono" data-game-state="ready">Game active! Pick a number to begin.</p>
             </div>
         </div>
     </section>
@@ -392,46 +396,40 @@
     <section id="collaborate" class="max-w-6xl mx-auto px-6 py-20 border-t border-zinc-800/80">
         <div class="max-w-3xl mb-12">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-sm font-semibold tracking-wide mb-4">
-                <span>Open for Global Opportunities</span>
+                <span>OPERATIONS · ADMINISTRATION · COORDINATION</span>
             </div>
-            <h2 class="text-3xl sm:text-4xl font-bold font-heading text-white mb-2" data-en="Let's Work Together" data-id="Mari Bekerjasama">Let's Work Together</h2>
-            <p class="text-zinc-400" data-en="Available for remote contracts, creative collaborations, and professional freelance services." data-id="Tersedia untuk kontrak jarak jauh, kolaborasi kreatif, dan layanan freelance profesional.">Available for remote contracts, creative collaborations, and professional freelance services.</p>
+            <h2 class="text-3xl sm:text-4xl font-bold font-heading text-white mb-2" data-en="Additional Strengths" data-id="Keahlian Pendukung">Additional Strengths</h2>
+            <p class="text-zinc-400" data-en="Content, creative, and organizational skills that complement my business operations experience." data-id="Keahlian konten, kreatif, dan organisasi yang melengkapi pengalaman operasional bisnis saya.">Content, creative, and organizational skills that complement my business operations experience.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
             <!-- Service 1: Voice & Transcription -->
             <div class="p-8 rounded-3xl glass border border-zinc-800 space-y-4 hover:border-primary/50 transition-colors">
                 <div class="w-12 h-12 rounded-xl bg-primary/20 text-primary flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-microphone-lines"></i></div>
-                <h3 class="text-xl font-bold text-white">Voice & Transcription</h3>
-                <p class="text-zinc-300 text-sm leading-relaxed">
-                    Bilingual audio services (Indonesian & English), professional voice recording utilizing video reel samples, and high-accuracy transcription.
-                </p>
+                <h3 class="text-xl font-bold text-white" data-en="Voice & Transcription" data-id="Suara & Transkripsi">Voice & Transcription</h3>
+                <p class="text-zinc-300 text-sm leading-relaxed" data-en="Bilingual audio services (Indonesian & English), professional voice recording utilizing video reel samples, and high-accuracy transcription." data-id="Layanan audio dwibahasa (Indonesia & Inggris), rekaman suara menggunakan sampel video, dan transkripsi akurat.">Bilingual audio services (Indonesian & English), professional voice recording utilizing video reel samples, and high-accuracy transcription.</p>
                 <div class="pt-2">
-                    <span class="text-xs font-mono text-primary bg-primary/10 px-3 py-1 rounded-full">Audio & Localization</span>
+                    <span class="text-xs font-mono text-primary bg-primary/10 px-3 py-1 rounded-full" data-en="Audio & Localization" data-id="Audio & Lokalisasi">Audio & Localization</span>
                 </div>
             </div>
 
             <!-- Service 2: Creative & Writing -->
             <div class="p-8 rounded-3xl glass border border-zinc-800 space-y-4 hover:border-primary/50 transition-colors">
                 <div class="w-12 h-12 rounded-xl bg-secondary/20 text-secondary flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-pen-nib"></i></div>
-                <h3 class="text-xl font-bold text-white">Writing & Content</h3>
-                <p class="text-zinc-300 text-sm leading-relaxed">
-                    Creative storytelling, scriptwriting, self-improvement content creation, and analytical research supported by academic foundations.
-                </p>
+                <h3 class="text-xl font-bold text-white" data-en="Writing & Content" data-id="Penulisan & Konten">Writing & Content</h3>
+                <p class="text-zinc-300 text-sm leading-relaxed" data-en="Creative storytelling, scriptwriting, self-improvement content creation, and analytical research supported by academic foundations." data-id="Storytelling kreatif, penulisan naskah, pembuatan konten pengembangan diri, dan riset analitis yang didukung latar belakang akademik.">Creative storytelling, scriptwriting, self-improvement content creation, and analytical research supported by academic foundations.</p>
                 <div class="pt-2">
-                    <span class="text-xs font-mono text-secondary bg-secondary/10 px-3 py-1 rounded-full">Creative & Academic</span>
+                    <span class="text-xs font-mono text-secondary bg-secondary/10 px-3 py-1 rounded-full" data-en="Creative & Academic" data-id="Kreatif & Akademik">Creative & Academic</span>
                 </div>
             </div>
 
             <!-- Service 3: Operations & Admin -->
             <div class="p-8 rounded-3xl glass border border-zinc-800 space-y-4 hover:border-primary/50 transition-colors">
                 <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl font-bold"><i class="fa-solid fa-briefcase"></i></div>
-                <h3 class="text-xl font-bold text-white">Remote Operations</h3>
-                <p class="text-zinc-300 text-sm leading-relaxed">
-                    Back-office administration, email collection workflows, project monitoring frameworks, and organizational consulting.
-                </p>
+                <h3 class="text-xl font-bold text-white" data-en="Remote Operations" data-id="Operasional Jarak Jauh">Remote Operations</h3>
+                <p class="text-zinc-300 text-sm leading-relaxed" data-en="Back-office administration, email collection workflows, project monitoring frameworks, and organizational consulting." data-id="Administrasi back-office, alur pengelolaan email, kerangka pemantauan proyek, dan konsultasi organisasi.">Back-office administration, email collection workflows, project monitoring frameworks, and organizational consulting.</p>
                 <div class="pt-2">
-                    <span class="text-xs font-mono text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full">Operations Support</span>
+                    <span class="text-xs font-mono text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full" data-en="Operations Support" data-id="Dukungan Operasional">Operations Support</span>
                 </div>
             </div>
         </div>
@@ -446,31 +444,32 @@
             </div>
 
             <!-- HTML Contact Form -->
-            <form action="#" method="POST" class="space-y-4">
+            <form onsubmit="sendContactMessage(event)" class="space-y-4">
                 <div class="grid sm:grid-cols-2 gap-4">
                     <div>
-                        <label class="block text-xs font-mono text-zinc-400 mb-1">Your Name</label>
-                        <input type="text" name="name" required class="w-full bg-zinc-900/80 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:border-primary focus:outline-none transition-colors" placeholder="John Doe">
+                        <label for="contact-name" class="block text-xs font-mono text-zinc-400 mb-1" data-en="Your Name" data-id="Nama Anda">Your Name</label>
+                        <input id="contact-name" type="text" name="name" autocomplete="name" required class="w-full bg-zinc-900/80 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:border-primary focus:outline-none transition-colors" placeholder="Your name" data-placeholder-en="Your name" data-placeholder-id="Nama Anda">
                     </div>
                     <div>
-                        <label class="block text-xs font-mono text-zinc-400 mb-1">Your Email</label>
-                        <input type="email" name="email" required class="w-full bg-zinc-900/80 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:border-primary focus:outline-none transition-colors" placeholder="john@company.com">
+                        <label for="contact-email" class="block text-xs font-mono text-zinc-400 mb-1" data-en="Your Email" data-id="Email Anda">Your Email</label>
+                        <input id="contact-email" type="email" name="email" autocomplete="email" required class="w-full bg-zinc-900/80 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:border-primary focus:outline-none transition-colors" placeholder="you@company.com" data-placeholder-en="you@company.com" data-placeholder-id="email@perusahaan.com">
                     </div>
                 </div>
                 <div>
-                    <label class="block text-xs font-mono text-zinc-400 mb-1">Message</label>
-                    <textarea name="message" rows="4" required class="w-full bg-zinc-900/80 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:border-primary focus:outline-none transition-colors" placeholder="Discussing a potential project or remote role..."></textarea>
+                    <label for="contact-message" class="block text-xs font-mono text-zinc-400 mb-1" data-en="Message" data-id="Pesan">Message</label>
+                    <textarea id="contact-message" name="message" rows="4" required class="w-full bg-zinc-900/80 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:border-primary focus:outline-none transition-colors" placeholder="Tell me about the opportunity..." data-placeholder-en="Tell me about the opportunity..." data-placeholder-id="Ceritakan tentang peluangnya..."></textarea>
                 </div>
                 <button type="submit" class="w-full py-4 rounded-xl bg-primary text-black font-semibold text-sm hover:bg-green-400 transition-colors shadow-[0_0_15px_rgba(34,197,94,0.3)]">
-                    Send Message
+                    <span data-en="Continue in WhatsApp" data-id="Lanjutkan ke WhatsApp">Continue in WhatsApp</span>
                 </button>
+                <p class="text-xs text-zinc-500 text-center" data-en="Your message will open in WhatsApp for you to review and send." data-id="Pesan akan dibuka di WhatsApp agar Anda dapat memeriksa dan mengirimkannya.">Your message will open in WhatsApp for you to review and send.</p>
             </form>
         </div>
     </section>
 
     <!-- FOOTER & SOCIAL PLATFORMS -->
     <footer class="max-w-6xl mx-auto px-6 py-12 border-t border-zinc-800/80 text-center space-y-6">
-        <p class="text-zinc-400 text-sm">Cirebon, West Java, Indonesia</p>
+        <p class="text-zinc-400 text-sm" data-en="Cirebon, West Java, Indonesia" data-id="Cirebon, Jawa Barat, Indonesia">Cirebon, West Java, Indonesia</p>
         
         <!-- Social & Communication Platforms -->
         <div class="flex flex-wrap justify-center gap-4 pt-2">
@@ -500,29 +499,67 @@
             <div class="flex items-center justify-between border-b border-zinc-800 pb-3">
                 <div class="flex items-center gap-2">
                     <span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
-                    <h4 class="text-sm font-bold text-white">Gala's Portfolio Assistant</h4>
+                    <h4 class="text-sm font-bold text-white" data-en="Gala's Portfolio FAQ" data-id="FAQ Portofolio Gala">Gala's Portfolio FAQ</h4>
                 </div>
-                <button onclick="toggleChat()" class="text-zinc-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+                <button type="button" onclick="toggleChat()" aria-label="Close portfolio FAQ" data-aria-en="Close portfolio FAQ" data-aria-id="Tutup FAQ portofolio" class="text-zinc-400 hover:text-white"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
             </div>
             <div class="h-48 overflow-y-auto space-y-3 text-xs text-zinc-300 pr-1">
                 <div class="bg-zinc-900/80 p-3 rounded-2xl border border-zinc-800">
-                    Hi! I'm Gala's virtual assistant. Looking to collaborate on remote operations, voice recording, transcription, or creative projects? Ask away!
+                    <span data-en="Hi! This is a simple portfolio FAQ (not a live AI assistant). Ask about operations, the CV, videos, or projects." data-id="Halo! Ini adalah FAQ sederhana tentang portofolio (bukan asisten AI langsung). Tanyakan tentang operasional, CV, video, atau proyek.">Hi! This is a simple portfolio FAQ (not a live AI assistant). Ask about operations, the CV, videos, or projects.</span>
                 </div>
             </div>
             <div class="flex gap-2">
-                <input type="text" id="chat-input" placeholder="Type a question..." class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-3 py-2 text-xs text-white focus:border-primary focus:outline-none" onkeypress="handleChatEnter(event)">
-                <button onclick="sendChatMessage()" class="px-4 py-2 bg-primary text-black rounded-xl text-xs font-bold hover:bg-green-400 transition-colors">Send</button>
+                <input type="text" id="chat-input" placeholder="Ask about the portfolio..." aria-label="Ask a portfolio question" data-placeholder-en="Ask about the portfolio..." data-placeholder-id="Tanyakan tentang portofolio..." data-label-en="Ask a portfolio question" data-label-id="Ajukan pertanyaan tentang portofolio" class="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-3 py-2 text-xs text-white focus:border-primary focus:outline-none" onkeydown="handleChatEnter(event)">
+                <button type="button" onclick="sendChatMessage()" class="px-4 py-2 bg-primary text-black rounded-xl text-xs font-bold hover:bg-green-400 transition-colors" data-en="Send" data-id="Kirim">Send</button>
             </div>
         </div>
-        <button onclick="toggleChat()" class="w-14 h-14 rounded-full bg-gradient-to-r from-primary to-secondary text-black font-bold text-xl shadow-[0_0_20px_rgba(34,197,94,0.4)] flex items-center justify-center hover:scale-105 transition-transform">
-            <i class="fa-solid fa-comment-dots text-white"></i>
+        <button type="button" onclick="toggleChat()" aria-label="Open portfolio FAQ" data-aria-en="Open portfolio FAQ" data-aria-id="Buka FAQ portofolio" aria-expanded="false" aria-controls="chat-window" id="chat-toggle" class="w-14 h-14 rounded-full bg-gradient-to-r from-primary to-secondary text-black font-bold text-xl shadow-[0_0_20px_rgba(34,197,94,0.4)] flex items-center justify-center hover:scale-105 transition-transform">
+            <i class="fa-solid fa-comment-dots text-white" aria-hidden="true"></i>
         </button>
     </div>
 
     <!-- JAVASCRIPT FOR TABS, LANGUAGE, MINI GAME & ASSISTANT -->
     <script>
+        function toggleMenu() {
+            const nav = document.getElementById('main-nav');
+            const button = document.getElementById('menu-btn');
+            const opening = nav.classList.contains('hidden');
+            nav.classList.toggle('hidden', !opening);
+            nav.classList.toggle('flex', opening);
+            nav.classList.toggle('flex-col', opening);
+            nav.classList.toggle('absolute', opening);
+            nav.classList.toggle('top-20', opening);
+            nav.classList.toggle('left-0', opening);
+            nav.classList.toggle('right-0', opening);
+            nav.classList.toggle('bg-darkBg', opening);
+            nav.classList.toggle('p-6', opening);
+            nav.classList.toggle('border-b', opening);
+            button.setAttribute('aria-expanded', String(opening));
+            button.setAttribute('aria-label', opening
+                ? button.getAttribute(`data-menu-close-${currentLang}`)
+                : button.getAttribute(`data-menu-open-${currentLang}`));
+        }
+
+        document.getElementById('main-nav').addEventListener('click', event => {
+            if (event.target.closest('a') && window.innerWidth < 768) toggleMenu();
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && window.innerWidth < 768 && !document.getElementById('main-nav').classList.contains('hidden')) toggleMenu();
+        });
+
+        function sendContactMessage(event) {
+            event.preventDefault();
+            const form = event.currentTarget;
+            const name = form.elements.name.value.trim();
+            const email = form.elements.email.value.trim();
+            const message = form.elements.message.value.trim();
+            const text = `Hello Gala, I'm ${name} (${email}). ${message}`;
+            window.open(`https://wa.me/6281329920044?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+        }
+
         // Gallery Tab Switching Logic
         function switchTab(category) {
+            if (!['posters', 'puzzles', 'vectors'].includes(category)) return;
             document.querySelectorAll('.gallery-tab').forEach(tab => tab.classList.add('hidden'));
             document.querySelectorAll('#creative button').forEach(btn => {
                 btn.classList.remove('bg-primary', 'text-black');
@@ -533,45 +570,82 @@
             const activeBtn = document.getElementById('tab-' + category);
             activeBtn.classList.remove('text-zinc-400');
             activeBtn.classList.add('bg-primary', 'text-black');
+            document.querySelectorAll('#creative [role="tab"]').forEach(btn => btn.setAttribute('aria-selected', String(btn === activeBtn)));
         }
+
+        document.querySelectorAll('#creative [role="tab"]').forEach((tab, index, tabs) => {
+            tab.addEventListener('keydown', event => {
+                if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+                event.preventDefault();
+                const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length;
+                tabs[next].focus();
+                tabs[next].click();
+            });
+        });
 
         // Language Switcher Logic
         let currentLang = 'en';
         function toggleLanguage() {
             currentLang = currentLang === 'en' ? 'id' : 'en';
+            document.documentElement.lang = currentLang;
             document.getElementById('lang-btn').innerText = currentLang.toUpperCase() + ' / ' + (currentLang === 'en' ? 'ID' : 'EN');
             
             document.querySelectorAll('[data-en]').forEach(el => {
                 const text = el.getAttribute(`data-${currentLang}`);
                 if (text) el.innerText = text;
             });
+            document.querySelectorAll('[data-placeholder-en]').forEach(el => {
+                el.placeholder = el.getAttribute(`data-placeholder-${currentLang}`);
+            });
+            document.querySelectorAll('[data-label-en]').forEach(el => {
+                el.setAttribute('aria-label', el.getAttribute(`data-label-${currentLang}`));
+            });
+            document.querySelectorAll('[data-aria-en]').forEach(el => el.setAttribute('aria-label', el.getAttribute(`data-aria-${currentLang}`)));
+            const menuButton = document.getElementById('menu-btn');
+            const menuIsOpen = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-label', menuButton.getAttribute(`data-menu-${menuIsOpen ? 'close' : 'open'}-${currentLang}`));
+            renderGameMessage(document.getElementById('guess-message').dataset.gameState || 'ready', attempts);
         }
 
         // Mini Game Logic: Guess the Secret Coffee Code
         let secretNumber = Math.floor(Math.random() * 50) + 1;
         let attempts = 0;
 
+        function renderGameMessage(state, attemptCount = attempts) {
+            const message = document.getElementById('guess-message');
+            message.dataset.gameState = state;
+            const messages = {
+                ready: ["Game active! Pick a number to begin.", "Permainan dimulai! Pilih angka untuk memulai."],
+                invalid: ["⚠️ Please enter a valid number between 1 and 50.", "⚠️ Masukkan angka yang valid antara 1 dan 50."],
+                correct: [`🎉 Correct! You guessed the secret code in ${attemptCount} attempts!`, `🎉 Benar! Kamu menebak kode rahasia dalam ${attemptCount} kali percobaan!`],
+                low: [`📈 Too low! Try a higher number. (Attempt ${attemptCount})`, `📈 Terlalu kecil! Coba angka yang lebih besar. (Percobaan ${attemptCount})`],
+                high: [`📉 Too high! Try a lower number. (Attempt ${attemptCount})`, `📉 Terlalu besar! Coba angka yang lebih kecil. (Percobaan ${attemptCount})`],
+                reset: ["Game reset! Pick a number between 1 and 50.", "Permainan diulang! Pilih angka antara 1 dan 50."]
+            };
+            message.textContent = messages[state][currentLang === 'en' ? 0 : 1];
+            const style = state === 'invalid' ? 'text-sm text-amber-400 pt-2 font-mono'
+                : state === 'correct' ? 'text-sm text-primary pt-2 font-mono font-bold'
+                : ['low', 'high'].includes(state) ? 'text-sm text-secondary pt-2 font-mono'
+                : 'text-sm text-zinc-400 pt-2 font-mono';
+            message.className = style;
+        }
+
         function checkGuess() {
             const inputVal = document.getElementById('guess-input').value;
-            const message = document.getElementById('guess-message');
             const userGuess = parseInt(inputVal);
 
             if (isNaN(userGuess) || userGuess < 1 || userGuess > 50) {
-                message.innerHTML = '⚠️ Please enter a valid number between 1 and 50.';
-                message.className = 'text-sm text-amber-400 pt-2 font-mono';
+                renderGameMessage('invalid');
                 return;
             }
 
             attempts++;
             if (userGuess === secretNumber) {
-                message.innerHTML = `🎉 Correct! You guessed the secret code in ${attempts} attempts!`;
-                message.className = 'text-sm text-primary pt-2 font-mono font-bold';
+                renderGameMessage('correct');
             } else if (userGuess < secretNumber) {
-                message.innerHTML = `📈 Too low! Try a higher number. (Attempt ${attempts})`;
-                message.className = 'text-sm text-secondary pt-2 font-mono';
+                renderGameMessage('low');
             } else {
-                message.innerHTML = `📉 Too high! Try a lower number. (Attempt ${attempts})`;
-                message.className = 'text-sm text-secondary pt-2 font-mono';
+                renderGameMessage('high');
             }
         }
 
@@ -579,45 +653,57 @@
             secretNumber = Math.floor(Math.random() * 50) + 1;
             attempts = 0;
             document.getElementById('guess-input').value = '';
-            document.getElementById('guess-message').innerHTML = 'Game reset! Pick a number between 1 and 50.';
-            document.getElementById('guess-message').className = 'text-sm text-zinc-400 pt-2 font-mono';
+            renderGameMessage('reset');
         }
 
         // Portfolio Assistant Chat Toggle & Simulation Logic
         function toggleChat() {
             const chatWin = document.getElementById('chat-window');
-            chatWin.classList.toggle('hidden');
+            const opening = chatWin.classList.contains('hidden');
+            chatWin.classList.toggle('hidden', !opening);
+            const toggle = document.getElementById('chat-toggle');
+            toggle.setAttribute('aria-expanded', String(opening));
+            toggle.setAttribute('aria-label', toggle.getAttribute(`data-aria-${currentLang}`));
+            if (opening) document.getElementById('chat-input').focus();
         }
 
         function sendChatMessage() {
             const input = document.getElementById('chat-input');
             const chatBody = document.querySelector('#chat-window .overflow-y-auto');
-            if(!input.value.trim()) return;
+            const userQuery = input.value.trim();
+            if (!userQuery) return;
 
-            // User message
-            chatBody.innerHTML += `<div class="bg-primary/10 border border-primary/20 text-primary p-3 rounded-2xl ml-6">${input.value}</div>`;
-            const userQuery = input.value;
+            // Use textContent so user input is never interpreted as HTML.
+            const userMessage = document.createElement('div');
+            userMessage.className = 'bg-primary/10 border border-primary/20 text-primary p-3 rounded-2xl ml-6';
+            userMessage.textContent = userQuery;
+            chatBody.append(userMessage);
             input.value = '';
             chatBody.scrollTop = chatBody.scrollHeight;
 
-            // Simulated Assistant response
-            setTimeout(() => {
-                let reply = "Thanks for reaching out! You can drop Gala a message directly via LinkedIn or connect on WhatsApp.";
-                const lower = userQuery.toLowerCase();
-                if(lower.includes('voice') || lower.includes('transcription')) {
-                    reply = "Gala offers professional bilingual (Indonesian & English) voice recording and high-accuracy transcription services. Check out the Video Reels section for samples!";
-                } else if(lower.includes('cv') || lower.includes('resume')) {
-                    reply = "You can download Gala's official 2026 CV directly from the CV & Certifications section near the top of the page.";
-                } else if(lower.includes('game') || lower.includes('play')) {
-                    reply = "Scroll down to the Mini Game section to test your luck with the Secret Coffee Code guessing game!";
-                }
-                chatBody.innerHTML += `<div class="bg-zinc-900/80 border border-zinc-800 p-3 rounded-2xl mr-6 text-zinc-300">${reply}</div>`;
-                chatBody.scrollTop = chatBody.scrollHeight;
-            }, 600);
+            const lower = userQuery.toLowerCase();
+            let reply = currentLang === 'id'
+                ? 'Saya dapat menjawab pertanyaan dasar tentang portofolio ini. Untuk hal lain, gunakan bagian kontak untuk menghubungi Gala.'
+                : 'I can answer basic questions about this portfolio. For anything else, use the contact section to reach Gala.';
+            if (lower.includes('operation') || lower.includes('admin') || lower.includes('business')) reply = 'Gala’s primary focus is business operations and administration, including managing Kedai Kopi Banggala and coordinating community events. See the Operations section.';
+            else if (lower.includes('cv') || lower.includes('resume')) reply = 'You can download Gala’s CV in the CV & Education section.';
+            else if (lower.includes('video') || lower.includes('content')) reply = 'Video samples are available in the Content section.';
+            else if (lower.includes('design') || lower.includes('project')) reply = 'The Design section includes poster, puzzle, and vector work.';
+            if (currentLang === 'id') {
+                if (lower.includes('operation') || lower.includes('admin') || lower.includes('business') || lower.includes('operasional') || lower.includes('bisnis')) reply = 'Fokus utama Gala adalah operasional dan administrasi bisnis, termasuk mengelola Kedai Kopi Banggala dan mengoordinasikan acara komunitas. Lihat bagian Operasional.';
+                else if (lower.includes('cv') || lower.includes('resume')) reply = 'CV Gala dapat diunduh di bagian CV & Pendidikan.';
+                else if (lower.includes('video') || lower.includes('content') || lower.includes('konten')) reply = 'Sampel video tersedia di bagian Konten.';
+                else if (lower.includes('design') || lower.includes('project') || lower.includes('desain') || lower.includes('proyek')) reply = 'Bagian Desain menampilkan karya poster, teka-teki, dan vektor.';
+            }
+            const response = document.createElement('div');
+            response.className = 'bg-zinc-900/80 border border-zinc-800 p-3 rounded-2xl mr-6 text-zinc-300';
+            response.textContent = reply;
+            chatBody.append(response);
+            chatBody.scrollTop = chatBody.scrollHeight;
         }
 
         function handleChatEnter(e) {
-            if(e.key === 'Enter') sendChatMessage();
+            if (e.key === 'Enter') sendChatMessage();
         }
     </script>
 </body>
